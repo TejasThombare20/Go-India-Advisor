@@ -9,6 +9,7 @@ const dummyData = [
     Watching: "1.8K",
     comments: "1.2K",
     duration: "4 min",
+    key : "1"
   },
   {
     name: "Bob Johnson",
@@ -17,6 +18,7 @@ const dummyData = [
     Watching: "3.4K",
     comments: "2.6K",
     duration: "6 min",
+    key : "2"
   },
   {
     name: "Emma Brown",
@@ -25,6 +27,7 @@ const dummyData = [
     Watching: "1.1K",
     comments: "900",
     duration: "3 min",
+    key : ""
   },
 
   {
@@ -34,6 +37,7 @@ const dummyData = [
     Watching: "2.9K",
     comments: "2.1K",
     duration: "5 min",
+    key : "3"
   },
   {
     name: "Michael Davis",
@@ -43,6 +47,7 @@ const dummyData = [
     Watching: "4.7K",
     comments: "3.8K",
     duration: "8 min",
+    key : "4"
   },
 ];
 
@@ -52,7 +57,7 @@ const DisscussionForum = () => {
       <h3 className="text-red-600 font-bold ">DISCUSSION FOURM</h3>
       <div className="flex flex-col justify-center items-center w-full gap-8">
         {dummyData.map((data) => (
-          <ProfileCard data={data} />
+          <ProfileCard key={data.key} data={data} />
         ))}
       </div>
     </section>

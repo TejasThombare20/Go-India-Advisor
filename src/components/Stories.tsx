@@ -25,6 +25,7 @@
             width="390"
             height="390"
             className="object-contain rounded-lg"
+            priority
             />
         </div>
         <CardHeader>

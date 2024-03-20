@@ -30,7 +30,7 @@ export default function Home() {
         <div className={open ? "w-full" : ""}>
           <Drawer open={open} setopen={setopen} />
         </div>
-        <Tabs defaultValue="account" className="w-[430px] ">
+        <Tabs defaultValue="Discussion" className="w-[430px] ">
           <TabsList className="grid w-full grid-cols-2 bg-indigo-400">
             <TabsTrigger value="Discussion">Discussion Fourm</TabsTrigger>
             <TabsTrigger value="Market">Market Stories</TabsTrigger>
